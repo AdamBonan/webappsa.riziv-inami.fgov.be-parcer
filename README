@@ -1,0 +1,4 @@
+Scrape more than 200K structured records from a website https://webappsa.riziv-inami.fgov.be/silverpages/Home/Search
+
+[Option]
+-f --filename   -   Filename without '.csv', default = 'data'
