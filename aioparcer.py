@@ -111,7 +111,7 @@ async def main(file_name: str):
         if not os.path.exists(file_name):
             header = True
         df = pd.DataFrame(data)
-        df.to_csv(file_name, index=False, header=header, mode="a")
+        df.to_csv(f"{file_name}.csv", index=False, header=header, mode="a")
 
         # Counter
         count_pages += len(pages)
