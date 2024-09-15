@@ -92,7 +92,7 @@ async def main(file_name: str):
             if not isinstance(page, bytes):
                 continue
 
-            tree = html.fromstring(page.decode('utf-8'))
+            tree = html.fromstring(page)
             all_card = tree.xpath('//div[@class="card"]')
 
             for card in all_card:
